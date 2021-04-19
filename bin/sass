@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sass --watch -C assets/sass/app.scss:css/styles.css --style compressed

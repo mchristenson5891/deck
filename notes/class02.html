@@ -1,0 +1,1844 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Class 02</title>
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/general-assembly.css" id="theme">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="css/zenburn.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class="hero">
+        <h1>HELLO</h1>
+      </section>
+
+      <section class="hero condensed">
+        <h1>Day <span class="red">#2</span></h1>
+        <h1>Git / Programming / JavaScript</h1>
+      </section>
+
+
+      <!-- GIT/GITHUB -->
+      <section class="title" id="github">
+        <h1>Warmup</h1>
+        <h5><a href="https://git.generalassemb.ly/mglumac/pattern-profile-warmup">Pattern Profile HTML/CSS Warmup</a></h5>
+      </section>
+
+      <!-- GIT/GITHUB -->
+      <section class="title" id="github">
+        <h1>git/github</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Git: What is it?</div>
+
+        <p>&#149; git &ne; GitHub</p>
+        <p>&#149; git is a version control program</p>
+        <p>&#149; Watches files and records any changes</p>
+        <p>&#149; Allows developers to save the current status of a project</p>
+        <p>&#149; Helps software teams coordinate</p>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">GitHub: What is it?</div>
+        <p>&#149; GitHub is a platform that makes it easy to work with git</p>
+        <p>&#149; Like Dropbox, but for code</p>
+        <p>&#149; Stores a history of files and their changes</p>
+        <p>&#149; Hosts files in the cloud; easy to share finished product</p>
+        <p>&#149; Also serves as a platform of sorts for developers collaborating on projects:</p>
+        <div class="pad-left-lg">
+          <p>&rArr; <a href="https://github.com/twbs/bootstrap">Twitter Bootstrap</a></p>
+          <p>&rArr; <a href="https://github.com/twbs/bootstrap/issues/3057">Makes for good drama</a></p>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">GitHub - Why Do Developers Use It?</div>
+
+        <p>&#149; Tracks changes; see who worked on what</p>
+        <p>&#149; Stores history; can easily revert and fix mistakes</p>
+        <p>&#149; Helps multiple developers to work on the same project</p>
+        <p>&#149; Allows for line-by-line feedback (useful for homework)</p>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Git - Some Vocab</div>
+
+        <p>1. Repository -</span></p>
+        <p>2. Clone</p>
+        <p>3. Commit</p>
+        <p>4. Push</p>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">GitHub - Repository/Repo</div>
+
+        <p>&#149; Basic element of GitHub</p>
+        <p>&#149; Contains all of a project's files (all the code)</p>
+        <p>&#149; One or more users can contribute to a single repository</p>
+        <p>&#149; Repositories are either public or private</p>
+        <p>&#149; Today you will create a repo!</p>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Clone</div>
+
+        <div class="text-smaller">
+          <p>&#149; Copies/clones a <u>remote</u> repo to your machine</p>
+          <p>&#149; This copy/clone is called a <u>local</u> repo</p>
+          <p>&#149; Changes to the <u>local</u> repo will not affect the <u>remote</u></p>
+          <p>&#149; Multiple users can clone the same repo:</p>
+        </div>
+        <div class="text-center">
+          <img src="../img/class00/git-clone.gif" alt="">
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Commit</div>
+
+        <p>&#149; A snapshot of changes to a repo</p>
+        <p>&#149; Think of it as "saving" your <u>local</u> changes</p>
+        <p>&#149; Commits do not change the original, remote repo</p>
+        <p>&#149; Contains a <a href="http://www.commitlogsfromlastnight.com/" target="_blank">message</a> describing
+          the
+          changes made
+        </p>
+        <div class="text-center">
+          <img src="../img/class00/git-commit.png" alt="">
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Push</div>
+
+        <p>&#149; "Pushes" your commits (saved changes) to a <u>remote</u> repository</p>
+        <p>&#149; Allows other developers to see your changes and "pull them down" to their own local repos</p>
+        <div class="text-center">
+          <img src="../img/class00/git-push-pull.jpg" alt="">
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Important (for this exercise)!</div>
+
+        <p>&#149; Your repo's name needs to match the following format:</p>
+        <p class="pad-left-lg"><code class="code">YOUR_USERNAME.github.io</code></p>
+        <div class="fragment">
+          <p>&#149; Ex 1:</p>
+          <div class="pad-left-lg">
+            <p><strong>Username: </strong>glumac</p>
+            <p><strong>Repo: </strong> <code class="code">glumac.github.io</code></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTRO TO JAVASCRIPT -->
+      <section class="title">
+        <h1>Intro To JavaScript</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">JavaScript: A History</div>
+
+        <p>&#149; JavaScript &ne; Java</p>
+        <p>&#149; Born in 1995 - created in 10 days by <a href="https://en.wikipedia.org/wiki/Brendan_Eich" target="_blank">Brendan
+            Eich
+          </a></p>
+        <p>&#149; JavaScript is one of the most <a target="_blank" href="http://githut.info/">popular languages</a></p>
+        <p>&#149; <a href="https://blog.codinghorror.com/the-principle-of-least-power/" target="_blank">Attwood's Law</a>
+          &rArr; "Any application that can be written in JavaScript, will eventually be written in JavaScript."</p>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">JavaScript: A History</div>
+
+        <div class="text-smallest">
+          <p>&#149; JavaScript's current version is ES6; most developers using a mix of ES5/ES6</p>
+          <p>&#149; ES &rArr; <a href="http://www.ecma-international.org/" target="_blank">ECMAScript</a> (European
+            Computer
+            Manufacturers Association)
+          </p>
+
+          <div class="text-center">
+            <img src="../img/class07/history-javascript.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="title" id="js-in-the-browser">
+        <h1>JS in the Browser</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">JavaScript: Uses in Browser</div>
+
+        <p>Most uses of JavaScript fall into four categories:</p>
+        <div class="pad-left-lg">
+          <p class="fragment">1) Responding to user actions (events)</p>
+          <p class="fragment">2) Changing HTML Content</p>
+          <p class="fragment">3) Changing CSS Styles</p>
+          <p class="fragment">4) Sending/retrieving data to/from the server</p>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">JavaScript: Uses</div>
+
+        <p>A few examples:</p>
+        <div class="pad-left-lg">
+          <p>&rArr; Adding / removing elements</p>
+          <p>&rArr; Animating content</p>
+          <p>&rArr; Changing CSS on-the-fly</p>
+          <p>&rArr; Detecting user interactions (clicks, key strokes, scrolling, etc.)</p>
+          <p>&rArr; Form validation</p>
+          <p>&rArr; Loading dynamic content</p>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Javascript vs HTML + CSS</div>
+
+        <h3>HTML/CSS</h3>
+        <div class="pad-left-lg">
+          <p>&#149; HTML/CSS are used to define <u>initial</u> page state</p>
+          <p>&#149; HTML/CSS are (mostly) <u>static</u></p>
+        </div>
+        <div class="fragment">
+          <h3>JS</h3>
+          <div class="pad-left-lg">
+            <p>&#149; JS is used to define how page state can <u>change</u></p>
+            <p>&#149; JS is <u>dynamic</u></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTRO TO PROGRAMMING -->
+      <section class="title" id="intro-to-programming">
+        <h1>Intro To Programming</h1>
+      </section>
+
+      <section class="center">
+        <h1>Introducing: Mike5000</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Think like a CPU - What did we learn?</div>
+
+        <p>&#149; You have to speak the same language</p>
+        <p class="fragment">&#149; Steps execute sequentially</p>
+        <p class="fragment">&#149; Steps need to be granular and precise</p>
+        <p class="fragment">&#149; The computer will only do what you tell it to do</p>
+        <p class="fragment">&#149; The computer is never wrong</p>
+      </section>
+
+      <section class="title" id="pseudo-code">
+        <h1>Pseudo Code</h1>
+        <p class="text-smaller">Like code, but not...</p>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Pseudo Code</div>
+
+        <p><b>Pseudo Code</b>:</p>
+        <div class="pad-left-lg text-smaller">
+          <p class="fragment">&rArr; The process of thinking through a program, step-by-step, without actually writing
+            a
+            line of code</p>
+          <p class="fragment">&rArr; A written outline of a program that can be converted into code</p>
+          <p class="fragment">&rArr; Allows the programmer to focus on problem solving, not the precise layout of the
+            code
+            and its syntax</p>
+          <p class="fragment">&rArr; Don't need to know how to code, to write pseudo code!</p>
+        </div>
+      </section>
+
+
+      <section data-background="#FFF">
+        <h2 class="text-left">Pseudo Code</h2>
+        <hr>
+
+        <p>Small Example - Pass/Fail check</p>
+        <div class="text-left text-smaller" style="background: #333; color: white; padding: 20px;">
+          <p><code>If student grade is greater than or equal to 60</code></p>
+          <p class="pad-left-lg"><code>Passed! 😌</code></p>
+          <p><code>otherwise</code></p>
+          <p class="pad-left-lg"><code>Failed 😔</code></p>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Pseudo Code</div>
+
+        <p>&#149; Let's write pseudo code for a thermostat:</p>
+        <p>&#149; Things to think about:</p>
+        <div class="pad-left-lg">
+          <p>&rArr; What is <u>goal</u> of our program? What are we trying to solve?</p>
+          <p>&rArr; What are the <u>inputs</u> for our program? What pieces of data will be going into it?</p>
+          <p>&rArr; What is the desired <u>output</u> of our program? Once the program runs, what should happen?</p>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Pseudo Code</div>
+
+        <div class="text-left text-smaller">
+          <div class="fragment">
+            <p><code>set target_temperature</code></p>
+            <p class="pad-left-lg"><code>target_temperature = 72</code></p>
+          </div>
+          <div class="fragment">
+            <p><code>get current_temperature</code></p>
+            <p class="pad-left-lg"><code>current_temperature = 68</code></p>
+          </div>
+          <div class="fragment">
+            <p><code>if current_temperature < target_temperature</code></p>
+            <p class="pad-left-lg"><code>turn_heater_up</code></p>
+          </div>
+          <div class="fragment">
+            <p><code>if current_temperature >= target_temperature</code></p>
+            <p class="pad-left-lg"><code>turn_heater_off</code></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="center">
+        <h1>Rock, Paper, Scissors</h1>
+        <p>Let's break into groups and whiteboard</p>
+      </section>
+
+      <section data-background="#FFF">
+        <h2 class="text-left">Pseudo Code</h2>
+        <hr>
+        <p>A Little More Complex... Rock Paper Scissors</p>
+        <div class="text-left text-smaller" style="background: #333; color: white; padding: 20px;">
+          <div><code>HumanPlay = Get player input</code></div>
+          <div><code>ComputerPlay = Get random selection of R, P, S</code></div>
+          <br>
+          <div><code>if HumanPlay == ComputerPlay </code></div>
+          <div class="pad-left-lg" style="color: yellow;"><code>Tie</code></div>
+          <div><code>if HumanPlay == Rock and ComputerPlay == Scissors</code></div>
+          <div class="pad-left-lg" style="color: yellow;"><code>Human Wins</code></div>
+          <div><code>if HumanPlay == Rock and ComputerPlay == Paper</code></div>
+          <div class="pad-left-lg" style="color: yellow;"><code>Computer Wins</code></div>
+          <div><code>if HumanPlay == Scissors and ComputerPlay == Paper</code></div>
+          <div class="pad-left-lg" style="color: yellow;"><code>Human Wins</code></div>
+
+          <div><code>...</code></div>
+        </div>
+      </section>
+
+      <section data-background="#FFF">
+        <div class="heading text-left">Pseudocode > Code</div>
+
+        <br>
+
+        <h3>Rock, Paper, Scissors in Javascript: <br><a href="https://codepen.io/glumac/pen/MOrBXr" target="blank">https://codepen.io/glumac/pen/MOrBXr</a></h3>
+      </section>
+      <!-- 
+      <section class="title" id="working-with-js">
+        <h1>Working Locally With JavaScript</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Working Locally with JavaScript</div>
+
+        <div class="text-smaller">
+          <p>&#149; Create JavaScript files using the <code class="code">.js</code> extension</p>
+          <p>&#149; Example: <code class="code">script.js</code></p>
+          <div class="fragment">
+            <p>&#149; Two methods to link HTML and JS:</p>
+            <p class="pad-left-lg">&rArr; External (most common; preferred):</p>
+            <pre><code>
+    &lt;script type="text/javascript" src="script.js"></script>
+  
+  </code></pre>
+            <p class="pad-left-lg">&rArr; Locally (in our HTML):</p>
+            <pre><code>
+    <p>some text</p>
+    
+    <script type="text/javascript">
+     // Write JavaScript here
+    </script>
+  &lt;/body>
+  
+  </code></pre>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section class="center">
+        <h1>Code Along</h1>
+        <div class="text-left text-smallest">
+          <p>1. Open <code class="code">first-javascript</code> directory in VS Code</p>
+          <p>2. Open the file <code class="code">script.js</code></p>
+          <p>3. Add the following to <code class="code">index.html</code>, above <code class="code">&lt;/body&gt;</code></p>
+          <pre><code>
+    &lt;script type="text/javascript" src="script.js">&lt;/script>
+  
+  </code></pre>
+          <p>3. Add the following to <code class="code">script.js</code></p>
+          <pre><code>
+    alert('This is an alert. This is annoying');
+  
+    document.write('Writing to the document!');
+  
+  </code></pre>
+          <p>4. Save and open <code class="code">index.html</code> in the browser</p>
+        </div>
+      </section> -->
+
+      <!-- JAVASCRIPT BASICS -->
+      <section class="title" id="js-basics">
+        <h1>JavaScript Basics</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">JavaSript Basics: Data Types</div>
+
+        <p>&#149; In the machine, there is only data</p>
+        <p>&#149; Data are separated by type:</p>
+        <div class="pad-left-lg text-smaller">
+          <p>&rArr; Numbers: <code class="code">1</code>, <code class="code">2</code>, <code class="code">100</code></p>
+          <p>&rArr; Strings: <code class="code">"donuts"</code>, <code class="code">"I love donuts."</code></p>
+          <p>&rArr; Booleans: <code class="code">true</code> and <code class="code">false</code></p>
+          <p>&rArr; Null/Undefined</p>
+          <p>&rArr; Objects: <code class="code">{ name: "MTA", status: "broken" }</code></p>
+          <!--             <p>&rArr; Functions*: <code class="code">function () { alert('hello, world!) }</code></p> -->
+
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Data Types: Numbers</div>
+
+        <p>&#149; Used for arithmetic: (operators: +, -, *, / )</p>
+        <div class="pad-left-lg text-smaller">
+          <p>2 + 2</p>
+          <p>2 - 2</p>
+          <p>2 * 2</p>
+          <p>2 / 2</p>
+        </div>
+        <div class="fragment">
+          <p>&#149; Advanced operations contained in the <code class="code">Math</code> library:</p>
+          <div class="pad-left-lg text-smaller">
+            <p>&rArr; <code class="code">Math.pow(2,3)</code> = 8</p>
+            <p>&rArr; <code class="code">Math.sqrt(25)</code> = 5</p>
+          </div>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Data Types: Strings</div>
+
+        <div class="text-smaller">
+          <p>&#149; Used to represent text: <code class="code">"Hello, World!"</code></p>
+          <div class="fragment">
+            <p>&#149; Notable for <b>string concatenation</b>:</p>
+            <pre><code>
+    'c' + 'a' + 't'
+  
+    // "cat"
+  
+  </code></pre>
+          </div>
+          <div class="fragment">
+            <hr>
+            <p>&#149; Can concatenate different data types (numbers, variables) with strings:</p>
+            <pre><code>
+    'i have ' + 2 + 'cats'
+  
+    // "i have 2 cats"
+  
+  </code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Data Types: Strings</div>
+
+        <p>&#149; ES6 introduced <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals"
+            target="_blank">template strings</a></p>
+        <p>&#149; A cleaner way to perform string concatenation:</p>
+        <pre><code>
+    let first = 'Joe'
+    let last = 'Trader'
+  
+    `Your name is ${first} ${last}.`
+  
+    // "Your name is Joe Trader"
+  
+  </code></pre>
+        <p>&#149; Note the tick marks surrounding the template: <code class="code">` `</code></p>
+      </section>
+
+      <!-- <section class="center">
+        <h1>Code Along</h1>
+        <div class="text-left text-smallest">
+          <p>1. Reopen <code class="code">first-javascript</code> in your text editor</p>
+          <p>2. Add the following <code class="code">console.log()</code> messages:</p>
+          <div class="pad-left-lg">
+            <p>&#149; The product of 10 and 10:</p>
+            <pre><code>
+    console.log(10 * 10);
+  
+  </code></pre>
+            <p>&#149; The quotient of 100 and 10</p>
+            <p>&#149; The difference of 50 and 17</p>
+            <p>&#149; The sum of 50 and 17</p>
+            <p>&#149; Your first and last name</p>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="title">
+        <h1>JavaScript Basics: Variables</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">JavaScript Basics: Variables</div>
+
+        <div class="text-smaller">
+          <p>&#149; Often, you will want to store, or keep track of, data in a program</p>
+          <p>&#149; Declare using the <code class="code">var</code> keyword (note: ES6 introduced <code class="code">let</code>
+            and
+            <code class="code">const</code>)</p>
+          <p>&#149; Will store the piece of data in memory</p>
+          <p>&#149; Use the variable's name to "call" it (retrieve it from memory):</p>
+          <pre><code>
+    let humanScore = 2;
+    let computerScore = 2;
+  
+    humanScore
+    // 2
+  
+    humanScore + computerScore
+    // 4
+  
+  </code></pre>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Variables: Naming Rules</div>
+
+        <p>&#149; Take care when naming your variables</p>
+        <p>&#149; Variable names should reflect the data they describe</p>
+        <p>&#149; Other naming conventions:</p>
+        <div class="pad-left-lg text-smaller">
+          <p>&rArr; Names should start with a lowercase letter</p>
+          <p>&rArr; Cannot use spaces; use hyphens or underscores instead</p>
+          <p>&rArr; Better yet, use camelCase:</p>
+          <pre><code>
+    let currentTemp = 70;
+    let targetTemp = 73;
+  
+  </code></pre>
+        </div>
+      </section>
+
+
+      <section>
+        <h2>Go to <a target="_blank" href="https://repl.it/@glumac/javascriptVariables">https://repl.it/@glumac/javascriptVariables</a></h2>
+        <h2>Complete part 1</h2>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Variable: Reassignment</div>
+
+        <div class="text-smaller">
+          <p>1. Create a variable, goldfishCount, and assign it to 2</p>
+          <pre><code>
+    let goldfishCount = 2;
+    // 2
+  
+  </code></pre>
+          <p>2. Perform some arithmetic on goldfishCount</p>
+          <pre><code>
+    goldfishCount * 2
+    // 4
+  
+  </code></pre>
+          <p>3. What's goldfishCount now equal to?</p>
+          <pre><code>
+    goldfishCount
+    // 2
+  
+  </code></pre>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Variables: Reassignment</div>
+
+        <p><b>Note</b>: you must <u>reassign</u> variables to change them</p>
+        <pre><code>
+    goldfishCount = 2
+    // 2
+  
+    goldfishCount * 2
+    // 4
+  
+    goldfishCount
+    // 2
+  
+    goldfishCount = goldfishCount * 2
+    // 4
+  
+    goldfishCount
+    // 4
+  
+  </code></pre>
+      </section>
+
+      <section>
+        <h2>Go to <a target="_blank" href="https://repl.it/@glumac/javascriptVariables">https://repl.it/@glumac/javascriptVariables</a></h2>
+        <h2>Complete part 2</h2>
+      </section>
+
+      <!-- <section data-background="#FFF" class="text-left">
+        <div class="heading">Altering types of data</div>
+
+        <p>&#149; <code class="code">parseInt()</code> converts the string data type to a <u>number</u> data type</p>
+        <pre><code>
+    goldfishCount x = "2"
+  
+    goldfishCount + 2
+    => "22"
+  
+    x = parseInt(x)
+    goldfishCount + 2
+    => 4
+  
+  </code></pre>
+      </section> -->
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">JavaScript Basics: Functions</div>
+
+        <div class="text-smaller">
+          <p>&#149; Functions are chunks of code, grouped together, that execute (or run) line-by-line</p>
+          <p>&#149; Often take an input, perform logic on that input, and return ouput</p>
+          <p>&#149; Think of them as miniature programs</p>
+          <div class="fragment">
+            <p>&#149; What is the name of this function? What does this function do?</p>
+            <pre><code>
+    function favoriteFood(){
+      let food = 'avocado toast';
+  
+      alert(food + ' is my favorite food.');
+    }
+  
+  </code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Named Functions</div>
+
+        <div class="text-smallest">
+          <p>&#149; Named Functions:</p>
+          <p class="pad-left-lg">&rArr; Function is associated with a name</p>
+          <p class="pad-left-lg">&rArr; Useful if you plan on using the function in many places</p>
+          <pre><code>
+    function favoriteFood(){
+      let food = 'avocado toast';
+  
+      alert(food + ' is my favorite food.');
+    }
+    
+  </code></pre>
+
+          <div class="fragment">
+
+            <p>We <b>excute</b> or <b>call</b> this function like this: </p>
+
+            <pre><code>
+    favoriteFood();
+  
+  </code></pre>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <section class="title" id="document-querying">
+        <h1>Document Querying</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Document Querying</div>
+
+        <p>&#149; Popular use case of JS is to "talk" to HTML/CSS</p>
+        <p class="fragment">&#149; Browser creates <code class="code">document</code> to communicate with JS</p>
+        <p class="fragment">&#149; Majority of FE work leverages this <code class="code">document</code></p>
+        <p class="fragment">&#149; The Document Object Model (DOM)</p>
+        <p class="fragment">&#149; Always start with the <code class="code">document</code>!</p>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Document Querying</div>
+
+        <p><code class="code">document.querySelector('selector')</code></p>
+        <div class="pad-left-lg">
+          <p>&rArr; Returns <u>first</u> element matching the <code class="code">selector</code></p>
+          <p class="fragment">&rArr; Can query for elements, classes, and IDs</p>
+        </div>
+        <div class="fragment">
+          <pre><code>
+  document.querySelector('#some-id')
+  // returns the first element with id of "some-id"
+
+  document.querySelector('.some-class')
+  // returns the first element class of "some-class"
+
+</code></pre>
+        </div>
+      </section>
+
+
+
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Functions: Named vs. Anonymous</div>
+
+        <div class="text-smallest">
+
+          </code></pre>
+          <div class="">
+            <p>&#149; Anonymous Functions:</p>
+            <p class="pad-left-lg">&rArr; Function is created and executed on the fly</p>
+            <p class="pad-left-lg">&rArr; Useful for callbacks and event handlers</p>
+            <pre><code>
+    document.querySelector('#my-el').onclick = function () {
+      // func body
+    }
+  
+  </code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <h2>Functions: Addt'l info</h2>
+        <hr>
+
+        <div class="text-smallest">
+          <p>&#149; Anonymous functions can be associated with variables...</p>
+          <pre><code>
+    let doSomething = function () {
+      alert('do something!');
+    }
+  
+  </code></pre>
+          <p>&#149; ...and then used to respond to browser events:</p>
+          <pre><code>
+    document.getElementById('some-btn').onclick = doSomething;
+  
+  </code></pre>
+          <p>&#149; IMPORTANT - define anonymous functions associated w/ variable before calling them:</p>
+          <pre><code>
+    // WOULD NOT WORK!
+    document.getElementById('some-btn').onclick = doSomething;
+  
+    let doSomething = function () {
+      alert('do something!'):
+    }
+  
+  </code></pre>
+        </div>
+      </section>
+
+      <!-- BROWSER EVENTS -->
+      <section class="title" id="browser-events">
+        <h1>Browser Events</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Browser Events</div>
+
+        <p>&#149; Events that users perform in the browser:</p>
+        <div class="pad-left-lg text-smaller">
+          <p>&rArr; click</p>
+          <p>&rArr; mouse over</p>
+          <p>&rArr; mouse out</p>
+          <p>&rArr; key down</p>
+          <p>&rArr; key up</p>
+          <p>&rArr; form submit</p>
+        </div>
+        <p>&#149; We can use JavaScript to track and respond to events</p>
+        <p>&#149; <a href="http://eloquentjavascript.net/14_event.html">More Events Info</a></p>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Browser Events</div>
+
+        <p>Apply events in three steps:</p>
+        <div class="pad-left-lg text-smallest">
+          <p>1) Use <code class="code">document.getElementById()</code> (or, any other query selector) to select the
+            element you want to apply the event to:</p>
+          <pre><code>
+    document.getElementById('click-me')
+  
+  </code></pre>
+          <p>2) Apply the event name to the selected element:</p>
+          <pre><code>
+    document.getElementById('click-me').onclick
+  
+  </code></pre>
+          <p>3) Set the above equal to the function that will run when the event is triggered</p>
+          <pre><code>
+    document.getElementById('click-me').onclick = function () {
+      // do something
+    }
+  
+  </code></pre>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Browser Events: Click Event</div>
+
+        <div class="text-smaller">
+          <p>&#149; Use <code class="code">.onclick</code> to add a click handler to an element</p>
+          <p>&#149; Events can be handled with both anonymous and named functions:</p>
+          <p>&#149; Named function:</p>
+          <pre><code>
+    document.getElementById('some-el').onclick = doSomething;
+  
+    function doSomething () {
+      // function body
+    }
+  
+  </code></pre>
+          <p>&#149; Anonymous function:</p>
+          <pre><code>
+    document.getElementById('some-el').onclick = function () {
+      // function body
+    }
+  
+  </code></pre>
+        </div>
+      </section>
+
+      <section class="center">
+        <h1>Code Along</h1>
+        <p><a href="http://codepen.io/glumac/pen/xgVBMm?editors=1010" target="_blank">http://codepen.io/glumac/pen/xgVBMm?editors=1010</a></p>
+      </section>
+
+      <section class="title" id="inner-html-property">
+        <h1><code>.innerHTML</code> Property</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading"><code>.innerHTML Property</code></div>
+
+        <div class="text-smallest">
+          <p>&#149; Often, you will want to set/get text from HTML</p>
+          <p>&#149; Use <code class="code">.innerHTML</code> to read and write HTML</p>
+          <p>&#149; Assuming the following HTML:</p>
+          <pre><code>
+    &ltdiv id="result">Hello, World!&lt/div>
+  
+  </code></pre>
+          <div class="fragment">
+            <p>&rArr; To read:</p>
+            <pre><code>
+    document.getElementById('result').innerHTML
+    => 'Hello, World!'
+  
+  </code></pre>
+          </div>
+          <div class="fragment">
+            <p>&rArr; To write:</p>
+            <pre><code>
+    document.getElementById('result').innerHTML = 'Cats';
+  
+  </code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="center">
+        <h2>Code Along</h2>
+
+        <div class="text-left text-smaller">
+          <p>1. Go to <a href="http://codepen.io/glumac/pen/YNqMqy?editors=101" target="_blank">http://codepen.io/glumac/pen/YNqMqy?editors=101</a></p>
+          <p>2. Add <code class="code">.onclick</code> events to the <code class="code">&lt;button&gt;</code>s</p>
+          <p>3. When clicked, these buttons should add/subtract from <code class="code">id="result"</code></p>
+          <p>4. Use <code class="code">.innerHTML</code> to change the text inside <code class="code">id="result"</code></p>
+          <p>5. Don't forget <code class="code">parseInt()</code></p>
+
+          <pre><code>
+    document.getElementById('zero').onclick = function () {
+      document.getElementById('result').innerHTML = 0;
+    }
+  
+  </code></pre>
+        </div>
+      </section>
+
+
+      <!-- JQUERY -->
+      <!-- <section class="title" id="jquery-intro">
+        <h1>jQuery</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">jQuery: What is it?</div>
+
+        <div class="text-smallest">
+          <p>&#149; jQuery <u>IS</u> JavaScript (<a href="https://code.jquery.com/jquery-2.2.2.js" target="_blank">source
+              code
+            </a>)</p>
+          <p>&#149; jQuery is a JavaScript <u>library</u></p>
+          <p class="fragment">&#149; A library is a collection of battle-tested functions that increase the
+            speed/stability
+            of development
+          </p>
+          <p class="fragment">&#149; Why reinvent the wheel? Use a library instead!</p>
+          <div class="fragment">
+            <p>&#149; 1000s of JS libraries, and (for better, or worse) growing:</p>
+            <p class="pad-left-lg">&rArr; Angular</p>
+            <p class="pad-left-lg">&rArr; Backbone</p>
+            <p class="pad-left-lg">&rArr; React</p>
+            <p class="pad-left-lg">&rArr; Underscore</p>
+          </div>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">jQuery: What is it?</div>
+
+        <p>&#149; Written by John Resig (lives in BK!)</p>
+        <p>&#149; jQuery's Motto: <u>'Write Less, Do More'</u></p>
+        <p>&#149; tl;dr makes working with JS easier:</p>
+        <p class="pad-left-lg">&rArr; HTML / CSS manipulation</p>
+        <p class="pad-left-lg">&rArr; Event handling (click events)</p>
+        <p class="pad-left-lg">&rArr; Animations</p>
+        <p class="pad-left-lg">&rArr; AJAX</p>
+        <p>&#149; Bonus: Covers JS's browser inconsistencies</p>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">jQuery: Why use it?</div>
+
+        <p>Pure JavaScript:</p>
+        <p class="pad-left-lg"><a target="_blank" href="http://codepen.io/josephjbliss/pen/uqdCw">http://codepen.io/josephjbliss/pen/uqdCw</a></p>
+        <p>jQuery:</p>
+        <p class="pad-left-lg"><a target="_blank" href="http://codepen.io/josephjbliss/pen/jLtfC">http://codepen.io/josephjbliss/pen/jLtfC</a></p>
+      </section>
+
+      <section class="center">
+        <h1>jQuery in Two Steps:</h1>
+        <div class="text-left">
+          <p>1) Use jQuery's powerful CSS selector to select which HTML elements you want to manipulate</p>
+          <pre><code>
+    $('#some-el')
+  
+  </code></pre>
+          <p>2) Call jQuery methods on the above selector:</p>
+          <pre><code>
+    $('#some-el').css('background', 'blue');
+  
+  </code></pre>
+        </div>
+      </section> -->
+
+      <!-- <section class="title" id="css-selectors">
+        <h1>jQuery CSS Selectors</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">jQuery CSS Selectors: $('x')</div>
+
+        <div class="text-smaller">
+          <p>&#149; CSS selectors query HTML for certain elements</p>
+          <p>&#149; Similar to <code class="code">document.querySelectorAll()</code></p>
+          <p>&#149; Use the same selectors you write in CSS!</p>
+          <div class="fragment">
+            <hr>
+            <p>&#149; The <code class="code">$('x')</code> Function - Get all of the 'X'</p>
+            <pre><code>
+    $('div') // select all &lt;div&gt;s
+    $('h2') // select all &lt;h2&gt;s
+    $('p a') // select all &lt;a&gt;s inside of all &lt;p&gt;s
+    $('p, a') // select all &lt;p&gt;s and &lt;a&gt;s
+  
+  </code></pre>
+            <p>&#149; The <code class="code">$('x')</code> function takes <u>ANY</u> CSS selector</p>
+          </div>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">jQuery CSS Selectors: IDs and Classes</div>
+
+        <div class="text-left">
+          <p>Fetch ID's using the <code class="code">#</code> (hashtag):</p>
+          <pre><code>
+    $('#someId')
+  
+  </code></pre>
+          <div class="fragment">
+            <hr>
+            <p>Fetch Classes using the <code class="code">.</code> (period):</p>
+            <pre><code>
+    $('.someClass')
+  
+  </code></pre>
+            <p class="text-smallest">Note: Using <code class="code">$('.someClass')</code> returns <u>ALL</u> of the
+              HTML
+              elements with a class of <code class="code">someClass</code></p>
+          </div>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">jQuery CSS Selectors: Practice</div>
+
+        <div class="text-smallest">
+          <p><code class="code">$('div')</code></p>
+          <p class="fragment pad-left-lg">&rArr; Select all HTML <code class="code">&lt;div&gt;</code> elements</p>
+          <p><code class="code">$('#someId')</code></p>
+          <p class="fragment pad-left-lg">&rArr; Selects the first HTML with an ID of "<code class="code">someId</code>"</p>
+          <p><code class="code">$('.someClass')</code></p>
+          <p class="fragment pad-left-lg">&rArr; Select all the HTML elements with class "<code class="code">someClass</code>"</p>
+          <p><code class="code">$('ul li a.social-link')</code></p>
+          <p class="fragment pad-left-lg">&rArr; Select anchor tags with class <code class="code">social-link</code>
+            that
+            are nested inside <code class="code">&lt;li&gt;</code> elements which are nested inside <code class="code">&lt;ul&gt;</code></p>
+        </div>
+      </section>
+
+      <section class="title" id="html-manipulation">
+        <h1>HTML Manipulation</h1>
+      </section>
+-->
+      <!-- HTML Manipulation -->
+      <!-- <section data-background="#FFF" class="text-left">
+        <div class="heading">HTML Manipulation</div>
+
+        <p><code class="code">.html()</code></p>
+        <p class="text-smallest pad-left-lg">Will return (read) the HTML (and text) inside the selected element:</p>
+        <pre><code>
+    $('#someId').html()
+  
+  </code></pre>
+        <p><code class="code">.html('&lt;h1&gt;a heading&lt;/h1&gt;')</code></p>
+        <p class="text-smallest pad-left-lg">Inserts and overwrites the HTML inside the selected element:</p>
+        <pre><code>
+    $('#someId').html('<h1>a heading</h1>')
+  
+  </code></pre>
+        <p>&#149; Use instead of the <code class="code">.innerHTML</code> JavaScript method</p>
+      </section> -->
+
+      <!-- 
+      <section class="center">
+        <h1>Codealong</h1>
+        <p><a target="_blank" href="http://codepen.io/glumac/pen/ggLjLj?editors=1010#0">http://codepen.io/glumac/pen/ggLjLj?editors=1010#0</a></p>
+      </section> -->
+
+      <!-- CLICK EVENT -->
+      <!-- <section class="title" id="click-event">
+        <h1>Click Event</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">jQuery Click Event: Named Functions</div>
+
+        <div class="fragment">
+          <p>jQuery:</p>
+          <pre><code>
+    $('#someId').click(someFunction)
+  
+    function someFunction () {
+      // do something
+    }
+  
+  </code></pre>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">jQuery Click Event: Anonymous Functions</div>
+
+        <div class="fragment">
+          <p>jQuery:</p>
+          <pre><code>
+    $('#someId').click(function () {
+      // do something
+    })
+  
+  </code></pre>
+        </div>
+      </section>
+
+      <section class="center">
+        <h1>CodeAlong</h1>
+        <p><a href="http://codepen.io/glumac/pen/ggLjLj?editors=1010#0" target="_blank">http://codepen.io/glumac/pen/ggLjLj?editors=1010#0</a></p>
+      </section>
+
+      <section class="title" id="input-elements">
+        <h1>User Input Elements</h1>
+        <p>&lt;input&gt; and &lt;select&gt;</p>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">User Input Elements</div>
+
+        <p>&#149; User input elements enable interactive behaviors</p>
+        <p>&#149; Allow users to input, select, check, and submit data</p>
+        <p>&#149; Two (primary) input-related elements:</p>
+        <p class="pad-left-lg"><code class="code">&lt;input&gt;</code></p>
+        <p class="pad-left-lg"><code class="code">&lt;select&gt;</code></p>
+        <p>&#149; Also see: <code class="code">&lt;textarea&gt;</code></p>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading"><code>&lt;input&gt;</code> element</div>
+
+        <div class="text-smallest">
+          <p>&#149; Used to accept a variety of data from user</p>
+          <pre><code>
+    &lt;input type="text" /&gt;
+  
+  </code></pre>
+          <p>&#149; The <code class="code">type</code> attribute determines the type of input:</p>
+          <div class="pad-left-lg">
+            <p>&rArr; text (default; don't have to specify)</p>
+            <p>&rArr; password</p>
+            <p>&rArr; radio</p>
+            <p>&rArr; checkbox</p>
+            <p>&rArr; color</p>
+            <p>&rArr; date</p>
+          </div>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading"><code>&lt;input&gt;</code> element</div>
+
+        <div class="text-smallest">
+          <p class="text-smallest"><code class="code">&lt;input placeholder="this is a placeholer"&gt;</code></p>
+          <input type="text" placeholder="this is a placeholer">
+          <hr>
+          <p class="text-smallest">
+            <code class="code">&lt;input type="radio" name="my-radio" checked&gt;</code>
+            <br><br>
+            <code class="code">&lt;input type="radio" name="my-radio"&gt;</code>
+          </p>
+          <input type="radio" name="radio1" checked> <input type="radio" name="radio1">
+          <hr>
+          <p class="text-smallest">
+            <code class="code">&lt;input type="checkbox"&gt;</code>
+          </p>
+          <input type="checkbox">
+          <hr>
+          <p class="text-smallest"><code class="code">&lt;input type="color"&gt;</code></p>
+          <input type="color">
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading"><code>&lt;select&gt;</code> element</div>
+
+        <div class="text-smaller">
+          <p>&#149; AKA - dropddown element</p>
+          <p>&#149; Used to represent a menu of options</p>
+          <pre><code>
+    &lt;select>
+      &lt;option value="option1">Option 1&lt;/option>
+      &lt;option value="option2">Option 2&lt;/option>
+      &lt;option value="option3">Option 3&lt;/option>
+    &lt;/select>
+  
+  </code></pre>
+          <div class="text-center">
+            <select>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          </div>
+          <p>&#149; <code class="code">&lt;option&gt;</code> elements represent available selections</p>
+          <p>&#149; <code class="code">&lt;option&gt;</code> elements must contain <code class="code">value</code>
+            attributes</p>
+        </div>
+      </section> -->
+
+
+
+
+
+
+      <!-- INPUTS AND .val() -->
+      <!-- <section class="title" id="input-and-val">
+        <h1><code class="lower">&lt;input&gt;</code> and <code class="lower">.val()</code></h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading"><code class="lower">&lt;input&gt;</code> and <code class="lower">.val()</code></div>
+
+        <div class="fragment">
+          <p>jQuery:</p>
+          <pre><code>
+    $('#someId').val()
+    // returns the value inside of someId
+  
+  </code></pre>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading"><code class="lower">&lt;input&gt;</code> and <code class="lower">.val()</code></div>
+
+        <p>&#149; Getting values, use <code class="code">.val()</code></p>
+        <pre><code>
+    $('#someId').val()
+    // returns the value inside of someId
+  
+  </code></pre>
+        <p>&#149; Setting values, use <code class="code">.val('some text')</code></p>
+
+        <pre><code>
+    $('#someId').val('some text')
+    // sets the value of someId to 'some text'
+  
+  </code></pre>
+        <p><code class="code">.val()</code> can be used on both <code class="code">&lt;input&gt;</code> and <code class="code">&lt;select&gt;</code>
+          elements</p>
+      </section>
+
+      <section class="center">
+        <h1>CodeAlong</h1>
+        <a target="_blank" href="http://codepen.io/glumac/pen/LxbBOz?editors=101">http://codepen.io/glumac/pen/LxbBOz?editors=101</a>
+      </section>
+
+      <section class="title" id="using-jquery">
+        <h1>Using jQuery</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Using jQuery</div>
+
+        <p>Option 1: Download and store jQuery locally</p>
+        <div class="pad-left-lg text-smallest">
+          <p>1. Download jQuery from <a target="_blank" href="http://jquery.com/download">http://jquery.com/download</a></p>
+          <p>2. Save the <code class="code">.js</code> file in your project's <code class="code">js</code> directory</p>
+          <p>3. Create a <code class="code">&lt;script&gt;</code> tag <u>ABOVE</u> any of your own JS files</p>
+        </div>
+        <pre><code>
+    &lt;script src="jquery.js"&gt;&lt;/script&gt;
+    &lt;script src="project.js"&gt;&lt;/script&gt;
+  
+  </code></pre>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Using jQuery</div>
+
+        <p>Option 2: Link to an external jQuery source (CDN)</p>
+        <div class="pad-left-lg text-smaller">
+          <p>1. Locate an externally hosted version of jQuery:</p>
+          <p class="pad-left-lg">&rArr; <a target="_blank" href="https://code.jquery.com/">https://code.jquery.com/</a></p>
+        </div>
+        <p class="pad-left-lg text-smallest">2. Create a <code class="code">&lt;script&gt;</code> tag <u>ABOVE</u> any
+          of
+          your own JS files</p>
+        <p class="pad-left-lg text-smallest">3. Point the <code class="code">src</code> attribute to the jQuery CDN</p>
+        <pre><code>
+    &lt;script src="https://code.jquery.com/jquery-1.11.3.js"&gt;&lt;/script&gt;
+    &lt;script src="project.js"&gt;&lt;/script&gt;
+  
+  </code></pre>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Using jQuery: Script Placement</div>
+
+        <div class="text-smaller">
+          <p><code class="code">&lt;script&gt;</code> tags should always be placed:</p>
+          <p class="pad-left-lg">&#149; At the <u>BOTTOM</u> of your <code class="code">&lt;body&gt;</code></p>
+          <p class="pad-left-lg">&#149; Right before the closing <code class="code">&lt;/body&gt</code>; tag</p>
+          <div class="fragment">
+            <p>Why:</p>
+            <p class="pad-left-lg">&#149; As your JS will reference DOM elements, these elements must be loaded first!</p>
+            <p class="pad-left-lg">&#149; By placing <code class="code">&lt;script&gt;</code> tags at the <u>BOTTOM</u>,
+              the browser will load these <code class="code">&lt;script&gt;</code>s LAST!</p>
+          </div>
+        </div>
+      </section> -->
+
+
+      <!--         <section class="center">
+            <h3>Rebuild Fortune Teller using jQuery</h3>
+            <div class="text-left text-smallest">
+              <p>1. Include jQuery using CDN or local (downloaded version)</p>
+              <p>2. Re-write JS using jQuery:</p>
+              <p class="pad-left-lg">&rArr; Replace <code>document.getElementById()</code> with <code>$()</code> selectors</p>
+              <p class="pad-left-lg">&rArr; Replace <code>.onclick</code> with <code>.click()</code></p>
+              <p class="pad-left-lg">&rArr; Replace <code>.value</code> with <code>.val</code></p>
+              <p class="pad-left-lg">&rArr; Replace <code>.innerHTML</code> with <code>.html()</code> or <code>.text()</code></p>
+              <p>3. Make sure to use:</p>
+  <pre><code>
+    $(document.ready(function () {
+  
+      // Your code here
+  
+    })
+  
+  </code></pre>
+            </div>
+          </section> -->
+
+      <!-- <section class="title" id="css-manipulation">
+        <h1>CSS Manipulation</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">CSS Manipulation: <code class="lower">.css()</code></div>
+
+        <p>JavaScript:</p>
+        <pre><code>
+    document.querySelector('#someId').style.color = 'red'
+  
+  </code></pre>
+        <div class="fragment">
+          <p>jQuery:</p>
+          <pre><code>
+    $('#someId').css('color', 'red')
+  
+  </code></pre>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">CSS Manipulation: <code class="lower">.css()</code></div>
+
+        <p class="text-smallest">&#149; Set Single Property: <code class="code">.css(propertyName, value)</code>:</p>
+        <pre><code>
+    $('p').css('background-color', 'pink')
+  
+  </code></pre>
+        <div class="fragment">
+          <p class="text-smallest">&#149; Set Multiple Properties: <br> <code class="code">.css({ property1: value1, property2: value2 })</code></p>
+          <pre><code>
+    $('#someId').css({ 'height': '100px', 'width': '100px' })
+  
+  </code></pre>
+        </div>
+        <div class="fragment">
+          <p class="text-smallest">&#149; Get Property: <code class="code">.css(propertyName)</code></p>
+          <pre><code>
+    $('#someId').css('height')
+  
+  </code></pre>
+        </div>
+      </section> -->
+
+      <section class="title" id="lab">
+        <h1>Lab</h1>
+      </section>
+
+      <section class="center">
+        <h2>Exercise: RGB Color Choice</h2>
+        <div class="text-left text-smallest">
+          <p>Open <a href="https://git.generalassemb.ly/mglumac/rgb-color-choice">https://git.generalassemb.ly/mglumac/rgb-color-choice</a>
+            and write javaScript for the following:</p>
+          <p>1. User enters a value into the red, green, and blue fields</p>
+          <p>2. User clicks 'Change the Color!' <code class="code">&lt;button&gt;</code>, triggers a function</p>
+          <p>3. Inside this function, create variables for the color values (R, G, B)</p>
+          <p>4. Relpace the text inside <code class="code">id=colorful-text</code> with the new RGB values</p>
+          <p>5. Use <code class="code">.css</code> to change the background color of the <code class="code">#wrapper</code></p>
+        </div>
+      </section>
+
+      <!--         <section class="center">
+            <h2>Lab: Calculator Box</h2>
+            <div class="text-left text-smallest">
+              <p>1. Open <code class="code">calculator-box</code> in your text editor</p>
+              <p>2. Add a <code class="code">&lt;script&gt;</code> tag to include jQuery</p>
+              <p>3. Build the following behaviors:</p>
+              <div class="pad-left-lg">
+                <p>&#149; Clicking on a plus box adds to the total in the center</p>
+                <p>&#149; Clicking on a minus box subtracts from the total</p>
+                <p>&#149; Clicking the red box makes the background of the center box to red</p>
+                <p>&#149; Clicking the blue box makes the background of the center box to blue</p>
+                <p>&#149; Clicking the center box will make its background white and reset the value inside to zero</p>
+              </div>
+            </div>
+          </section> -->
+
+      <section class="text-left">
+        <div class="heading">Lab: Lifetime Supply</div>
+
+        <div class="text-smaller">
+          <p>Open <code class="code">lifetime-supply</code> - use JS for the following:</p>
+          <p>1. Store your current age into a variable</p>
+          <p>2. Store a maximum age into a variable</p>
+          <p>3. Store a favorite drink (from a drop-down) into a variable</p>
+          <p>4. Store an amount per day into a variable</p>
+          <p>5. Calculate how much you would drink for the rest of your life!</p>
+          <p>6. Output your results to the user</p>
+        </div>
+      </section>
+
+      <!-- OBJECTS -->
+      <section class="title" id="objects">
+        <h1>Objects</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Objects</div>
+
+        <p>&#149; What are the datatypes we have used so far?</p>
+
+        <p class="fragment">String, Number, Boolean, Undefined</a>
+          <br> These are all <i>primative</i> data types.
+        </p>
+
+        <p>&#149; Why would we want to use an object?</p>
+        <p class="fragment">Objects are data type we can represent more complex data.</a></p>
+      </section>
+
+
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">What is an Object?</div>
+
+        <p>An object is an unordered list of data that is stored as a series of name-value pairs. Each item in the list
+          is
+          called a property (functions are called methods). Consider this simple object:</p>
+
+        <pre><code>
+   let coderDude = {
+    firstName: "Mike", 
+    favLanguage: "JavaScript"
+   }
+  
+  </code></pre>
+      </section>
+
+
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">What is an Object?</div>
+
+
+        <pre><code>
+   let coderDude = {
+    firstName: "Mike", 
+    favLanguage: "JavaScript"
+   }
+  
+  </code></pre>
+
+        <p>
+          Think of an object as a list that contains items, and each item (a property or a method) in the list is
+          stored by a name-value
+          pair. <br><br>The property names in the example above are firstName and favLanguage. The values are “Mike”
+          and “Javascript.”
+        </p>
+      </section>
+
+
+      </p>
+
+
+      <section data-background="#FFF" class="text-left title">
+        <div class="heading">Please open</div>
+
+        <p><a href="https://repl.it/Fs1p/0" target="_blank">https://repl.it/Fs1p/0</a></p>
+      </section>
+
+
+
+
+
+
+
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Creating Objects:</div>
+
+        <pre><code>
+  // This is an empty object initialized using the object literal notation​
+  ​let myBooks = {};
+  ​
+  ​// This is an object with 4 items, again using object literal​
+  ​ let mango = {
+    color: "yellow",
+    shape: "round",
+    sweetness: 8,
+  ​
+  ​  howTaste: function () {
+     console.log("Hmm Hmm Good");
+    }
+  }
+  
+  </code></pre>
+
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Object Properties:</div>
+
+        <p>We can access object properties using <code class="code">dot</code> syntax</p>
+
+        <pre><code>
+   let mango = {
+    color: "yellow",
+    shape: "round",
+    sweetness: 8
+   }
+  
+   mango.color //returns "yellow"
+   mango.sweetness //returns 8
+  
+  </code></pre>
+
+      </section>
+
+
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Object Properties:</div>
+
+        <p>We can also create or change object properties using <code class="code">dot</code> syntax!</p>
+
+        <pre><code>
+   let mango = {
+    color: "yellow",
+    shape: "round",
+   }
+  
+   mango.sweetness = 8 // sets new property name and value on mango
+   mango.shape = "square" //changes mango's shape property
+  
+  </code></pre>
+
+      </section>
+
+
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">More on Objects</div>
+
+        <p>For info on objects:</p>
+
+        <p><a target="_blank" href="http://javascript.info/tutorial/objects">http://javascript.info/tutorial/objects</a></p>
+
+      </section>
+
+
+      <!--         <section data-background="#FFF" class="text-center title">
+            <h4>Changing html/css with object properties:</h4>
+            <p class="text-smallest"><a href="https://codepen.io/glumac/pen/xLxMWr" target="_blank">https://codepen.io/glumac/pen/xLxMWr</a></p>
+  
+          </section>
+   -->
+      <!-- jQuery Plugins -->
+      <section class="title" id="jquery-plugins">
+        <h1>jQuery Plugins</h1>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">jQuery Plugins</div>
+
+        <p>&#149; Plugins (or libraries) are pre-written pieces of JavaScript</p>
+        <p>&#149; Built to solve a particular issue:</p>
+        <div class="pad-left-lg text-smaller">
+          <p>&rArr; Fullscreen video player</p>
+          <p>&rArr; Image carousel</p>
+          <p>&rArr; Page scrolling</p>
+        </div>
+        <p>&#149; To use, just add the plugin script below jQuery:</p>
+        <pre><code>
+    &lt;script&gt; src="jquery.js"&gt;&lt;/script&gt;
+    &lt;script&gt; src="my-super-plugin.js"&gt;&lt;/script&gt;
+  
+  </code></pre>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">jQuery Plugins: What to look for?</div>
+
+        <p>&#149; There are 1000s of plugins; be judicious:</p>
+        <div class="pad-left-lg">
+          <p class="fragment">&rArr; Recently updated</p>
+          <p class="fragment">&rArr; Well-documented</p>
+          <p class="fragment">&rArr; The more contributors the better</p>
+          <p class="fragment">&rArr; Open source</p>
+          <p class="fragment">&rArr; Hosted on GitHub</p>
+        </div>
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">jQuery Plugins: Tips for using</div>
+
+        <p class="fragment">1) Read the documentation</p>
+        <p class="fragment">2) Seriously, read the documentation</p>
+        <p class="fragment">3) Look for, and copy, examples</p>
+        <p class="fragment">4) Start simply, then add complexity</p>
+        <p class="fragment">5) Search for tutorials/examples if you get stuck</p>
+        <p class="fragment">6) Open a GitHub issue if you think you found a bug</p>
+      </section>
+
+      <!-- RAIN DROPS PLUGIN -->
+      <section class="center">
+        <h1>Raindrops.js jQuery Plugin</h1>
+        <div class="text-left">
+          <p>1) Open <code class="code">raindrops-exmaple</code></p>
+          <p>2) Visit <a href="http://daniellaharel.com/raindrops/" target="_blank">http://daniellaharel.com/raindrops/</a></p>
+          <p>3) Successfully implement raindrops.js</p>
+        </div>
+      </section>
+
+      <!-- jQuery Plugins -->
+      <section class="title">
+        <h3>Other front-end Javascript Libraries / Frameworks</h3>
+
+        <h6>React, Angular, etc.</h6>
+      </section>
+
+
+
+      <section class="center">
+        <p>What if we wanted to build an app that include a collection/list of something (maybe restaurants, news
+          headlines,
+          or friends)?</p>
+
+        <p class="fragment">How could we represent that list in our JavaScript??</p>
+
+      </section>
+
+
+      <!-- Arrays -->
+      <section class="title">
+        <h1>Arrays</h1>
+      </section>
+
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Arrays</div>
+
+        <p>Declaring an empty array:</p>
+
+        <pre><code>
+   let myArr = [];
+  
+  </code></pre>
+
+      </section>
+
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Array Syntax</div>
+
+        <p>&#149; Arrays are filled with elements: i.e. <br> &nbsp; &nbsp;<code class="code">myArr3 = [element, anotherElement];</code></p>
+        <p>&#149; Elements can be strings, numbers, booleans, and more.</p>
+
+        <pre><code>
+   myArr = ['Hello', 54.3, true];
+  
+  </code></pre>
+
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Arrays Indexing</div>
+
+        <div class="text-center">
+          <img src="../img/class18/array_index_diagram.png" alt="">
+        </div>
+
+      </section>
+
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Arrays Indexing</div>
+
+        <pre><code>
+   myArr = ['Hello', , 54.3, true];
+  
+   console.log(myArr[0]); //prints Hello
+   console.log(myArr[1]); //prints undefined
+   console.log(myArr[2]); //prints 54.3
+   console.log(myArr[3]); //prints true
+  
+  </code></pre>
+
+      </section>
+
+
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">More on Arrays</div>
+
+        <p>There are a lots of things ways we can do with arrays (say, adding or removing items) beyond what we will
+          touch
+          upon today:
+        </p>
+
+        <p><a target="_blank" href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array">https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array</a></p>
+
+        <p><a target="_blank" href="https://www.codecademy.com/courses/javascript-beginner-en-NhsaT/2/1?curriculum_id=502d635ceda910000200293b#!/exercises/0">Codecademy
+            (free) Array lesson</a></p>
+
+
+
+      </section>
+
+
+      <!--        <section data-background="#FFF" class="text-left">
+            <div class="heading">A helpful bit of code</div>
+  
+  <p>To get a random elements from an array (leveraging javascript's <code class="code">Math</code> library)</p>
+  <pre>
+  <code>
+   let item = yourArray[Math.floor(Math.random() * yourArray.length)];
+  
+  </code></pre>     
+  
+          </section> -->
+
+
+      <!-- CSS FRAMEWORKS -->
+      <section class="title">
+        <h1>Loops</h1>
+      </section>
+
+
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Getting Loopy</div>
+
+        <p>Loops offer a quick and easy way to do something repeatedly.</p>
+
+      </section>
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Iterating Over Array</div>
+
+        <p>(Relatively) new special ES5 loop to iterating over arrays</p>
+
+        <p><code class="code">forEach</code> loop</p>
+        <pre><code>
+   Array.forEach
+  
+  </code></pre>
+
+      </section>
+
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">Iterating Over Array</div>
+
+        <pre><code>
+   let fruits=['Banana','Apple', 'Pear'];
+   
+   fruits.forEach(function(element,index){
+      console.log(element,index);
+   });
+  
+  
+   // prints 'Banana' 0
+   // prints 'Apple' 1
+   // prints 'Pear' 2
+  
+  
+  </code></pre>
+
+      </section>
+
+
+
+      <!-- CSS FRAMEWORKS -->
+      <section class="title">
+        <h1>APIs</h1>
+      </section>
+
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">APIs</div>
+
+        <p>APPLICATION PROGRAMMING INTERFACE</p>
+
+        <div class="text-smallest">
+          <p>- allow you to retrieve and/or submit information from a source</p>
+          <p>- some are private, i.e. for internal use within the company</p>
+          <p>- some are public, i.e. for use by outside individuals</p>
+          <p>- public APIs may require registration, payment, security measures, and rate limits</p>
+        </div>
+
+
+      </section>
+
+
+      <section data-background="#FFF" class="text-left">
+        <div class="heading">APIs</div>
+
+        <p>Examples:</p>
+        <p>NYT: <a target="_blank" href="http://developer.nytimes.com/docs">http://developer.nytimes.com/docs</a></p>
+        <p>Instagram: <a target="_blank" href="https://www.instagram.com/developer/">https://www.instagram.com/developer/</a></p>
+        <p>Twitter: <a target="_blank" href="https://dev.twitter.com/overview/documentation">https://dev.twitter.com/overview/documentation</a></p>
+      </section>
+
+
+      <section class="center">
+        <p>Take a moment and search for API's related to something that interests you...</p>
+      </section>
+
+
+      <section class="title">
+        <h1>API - MEME PROJECT</h1>
+      </section>
+
+
+      <section class="title">
+        <h1>SERVER SIDE CODE</h1>
+      </section>
+
+      <section class="title">
+        <h1>NODE.JS</h1>
+      </section>
+
+      <section class="title">
+        <h3>BACK END EXAMINATION - FRESH POTATOES</h3>
+        <h6>PEEK AT DATABASE</h6>
+      </section>
+
+      <section class="title">
+        <h1>API BACK END EXAMINATION - RAILS</h1>
+      </section>
+
+
+      <!-- THE END -->
+      <section class="center">
+        <img src="../img/class01/the-end.jpg">
+      </section>
+
+
+
+    </div>
+  </div>
+
+  <script src="js/head.min.js"></script>
+  <script src="js/reveal.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
